@@ -29,6 +29,20 @@
             $this->genre = $genre;
             $this->year = $year;
         }
+
+        // all'interno della classe definiamo almeno un "Metodo"
+        public function getAllInformation()
+        {
+            return "<div>
+                        <h1>
+                            Movie: '$this->title'<br>
+                            Actors: '$this->actors'<br>
+                            Director: '$this->director'<br>
+                            Genre: '$this->genre'<br>
+                            Year: '$this->year'<br>
+                        </h1>
+                    </div>";
+        }
     }
     ?>
 
