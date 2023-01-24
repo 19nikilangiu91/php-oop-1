@@ -46,18 +46,29 @@
     }
 
     // Istanziamo almeno due oggetti "Movie".
-    $movieOne = new Movie("il Padrino", "Al Pacino, Marlon Brando, Robert De Niro", "Francis Ford Coppola", "Dramatic", 1972);
-    $movieTwo = new Movie("Lo Squalo", "Roy Scheider, Richard Dreyfuss, Robert Shaw", "Steven Spielberg", "Horror", 1975);
-
+    // $movieOne = new Movie("il Padrino", "Al Pacino, Marlon Brando, Robert De Niro", "Francis Ford Coppola", "Dramatic", 1972);
+    // $movieTwo = new Movie("Lo Squalo", "Roy Scheider, Richard Dreyfuss, Robert Shaw", "Steven Spielberg", "Horror", 1975);
+    
     // var_dump($movieOne);
     // echo "<br>";
     // var_dump($movieTwo);
     
     // Stampiamo a schermo i valori delle "Relative Proprietà".
     
-    echo $movieOne->getAllInformation() . "<br>";
-    echo "-------------------------------- <br> ";
-    echo $movieTwo->getAllInformation() . "<br>";
+    // echo $movieOne->getAllInformation() . "<br>";
+    // echo "-------------------------------- <br> ";
+    // echo $movieTwo->getAllInformation() . "<br>";
+    
+    // Istanziamo almeno due oggetti "Movie".
+    $movies = [
+        new Movie("il Padrino", "Al Pacino, Marlon Brando, Robert De Niro", "Francis Ford Coppola", "Dramatic", 1972),
+        new Movie("Lo Squalo", "Roy Scheider, Richard Dreyfuss, Robert Shaw", "Steven Spielberg", "Horror", 1975)
+    ];
+
+    // Creo un ciclo "foreach" per stampare i film contenuti nell'array "$movies"
+    foreach ($movies as $movie) {
+        echo $movie->getAllInformation();
+    }
     ?>
 </body>
 
