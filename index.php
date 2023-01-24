@@ -20,7 +20,7 @@
         public $genre;
         public $year;
 
-        // all'interno della classe definiamo un "Costruttore".
+        // all'interno della classe definiamo un "__construct".
         public function __construct($title, $actors, $director, $genre, $year)
         {
             $this->title = $title;
