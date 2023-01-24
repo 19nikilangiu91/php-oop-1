@@ -44,6 +44,14 @@
                     </div>";
         }
     }
+
+    // Istanziamo almeno due oggetti "Movie".
+    $movieOne = new Movie("il Padrino", "Al Pacino, Marlon Brando, Robert De Niro", "Francis Ford Coppola", "Dramatic", 1972);
+    $movieTwo = new Movie("Lo Squalo", "Roy Scheider, Richard Dreyfuss, Robert Shaw", "Steven Spielberg", "Horror", 1975);
+
+    var_dump($movieOne);
+    echo "<br>";
+    var_dump($movieTwo);
     ?>
 
 </body>
