@@ -13,12 +13,22 @@
     // Definiamo una classe "Movie".
     class Movie
     {
-        // all'interno della classe dichiariamo delle "variabili d'istanza"
+        // all'interno della classe dichiariamo delle "variabili d'istanza".
         public $title;
         public $actors;
         public $director;
         public $genre;
         public $year;
+
+        // all'interno della classe definiamo un "Costruttore".
+        public function __construct($title, $actors, $director, $genre, $year)
+        {
+            $this->title = $title;
+            $this->actors = $actors;
+            $this->director = $director;
+            $this->genre = $genre;
+            $this->year = $year;
+        }
     }
     ?>
 
